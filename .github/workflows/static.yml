@@ -21,6 +21,6 @@ jobs:
           
       - name: Sync to S3 with Exclude & Include
         run: 
-          aws s3 sync ./dist s3://harrypersonalportfolio/ \
+          aws s3 sync ./ s3://harrypersonalportfolio/ \
           --exclude "*" \
           --include "index.html"
