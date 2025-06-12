@@ -19,7 +19,7 @@ jobs:
           aws-region: eu-north-1
       - name: code static code to s3
         run: |
-          aws s3 sync ./dist s3://harrypersonalportfolio/ \
+          aws s3 sync ./ s3://harrypersonalportfolio/ \
           --exclude "*" \
           --include "assets/*"
           --include "index.html"
